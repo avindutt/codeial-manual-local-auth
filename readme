@@ -1,0 +1,8 @@
+.gitignore file has been created to remove the heavyness of the folder node modules.
+node_modules folder can be created by any co-worker by just npm install command, so it is redundant here.
+
+so now by 'git status' command we can check that node_modules folder is not there anymore.
+
+Basically a git repository is created in order to track all the changes that have been made so far in a particular project(when there are multiple people working on it).
+
+Command to change the branch of git: git checkout -b <branch_name>
