@@ -24,6 +24,9 @@ router.get('/sign-out', usersController.destroySession);
 
 router.get('/auth/google', passport.authenticate('google', {scope: ['profile', 'email']})); // scope defines the permissions getting requested from google(here we are requiring profile and email from google)
 
-router.get('/auth/google/callback', passport.authenticate('google', {failureRedirect: '/users/sign-in'}), usersController.createSession);
+router.get('/auth/google/callback', passport.authenticate(
+    'google', 
+    {failureRedirect: '/users/sign-in'}
+), usersController.createSession);
 
 module.exports = router;

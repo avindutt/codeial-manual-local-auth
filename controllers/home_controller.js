@@ -27,7 +27,7 @@ module.exports.home = async function(req, res){
    }
    // console.log(req.cookies);
    // res.cookie('user_id', 25);//editing the cookie value
-
+5
 //    Post.find({}, function(err, posts){
 //     return res.render('home', {
 //         title: "Codeial | Home",
